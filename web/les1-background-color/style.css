@@ -1,5 +1,14 @@
 p{
-    margin: 10px;
-    background-color: blue;
-    
+    padding: 30px;
+    background-color:chocolate;
+    outline: black;
+    text-align: center;
+    margin-right: 75%;
+}
+p:hover{
+    background-color: brown;
+    color: cadetblue;
+    padding: 32px;
+    text-align: left;
+    text-align: center;
 }
