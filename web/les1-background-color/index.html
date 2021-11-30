@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>F1M2JS</title>
+</head>
+<body>
+    <h1 id="header">Museum online javascript</h1>
+    <p id="mkRood">Maak achtergrond rood</p>
+    <p id="mkGroen">Maak achtergrond groen</p>
+    <p id="mkBlauw">Maak achtergrond blauw</p>
+    <p id="Rdtext">Maak de text Rood</p>
+    <p id="Grtext">Maak de text Groen</p>
+    <p id="Bltext">Maak de text Blauw</p>
+    <p id="reset">Reset</p>
+    <script>
+        const mkGroen = document.getElementById("mkGroen");
+        const mkRood = document.getElementById("mkRood");
+        const mkBlauw = document.getElementById("mkBlauw");
+        const Rdtext = document.getElementById("Rdtext");
+        const Grtext = document.getElementById("Grtext");
+        const Bltext = document.getElementById("Bltext");
+        const reset = document.getElementById("reset");
+
+        Grtext.addEventListener("click", wordGroen);
+        mkGroen.addEventListener("click", maakGroen);
+        mkBlauw.addEventListener("click", maakBlauw);
+        mkRood.addEventListener("click", maakRood);
+        Rdtext.addEventListener("click", wordRood);
+        Bltext.addEventListener("click", wordBlauw);
+        reset.addEventListener("click", Reset);
+
+        function Reset(){
+            document.body.style.color = "black";
+            document.body.style.backgroundColor = "white";
+        }
+        function wordBlauw(){
+            document.body.style.color = "blue";
+        }
+        function wordGroen(){
+            document.body.style.color = "green";
+        }
+        function wordRood(){
+            document.body.style.color = "red";
+        }
+        function maakGroen(){
+            document.body.style.backgroundColor = "green";
+        }
+        function maakRood(){
+            document.body.style.backgroundColor = "red";
+        }
+        function maakBlauw(){
+            document.body.style.backgroundColor = "blue";
+        }
+
+    </script>
+</body>
+</html>
