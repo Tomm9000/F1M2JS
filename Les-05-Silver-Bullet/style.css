@@ -1,0 +1,22 @@
+body{
+    background-color: #90D1CC;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    background-color: #9CE3DE;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#myInteraction{
+    padding: 10px;
+}
+
+input{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
