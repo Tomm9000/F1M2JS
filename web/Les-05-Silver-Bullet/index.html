@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Poppins:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <title>Silver Bullet Adventure</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="container">
         <img id="myImage" src="img/0.jpg" height="600px" alt="foto sb">
@@ -17,8 +21,19 @@
             <div id="myTitle">Silver Bullet Adventure (1 t/m 11)</div>
             <input type="text" id="myInput" autocomplete="off">
             <input type="button" value="voer in" onclick="getInput()">
+            <h3>Kies welke richting je op wilt:</h3>
+            <nav>
+                <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopOost" onclick="goDirection('oost')">Oost</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+            </nav>
+            <img src="img/map_compass.png" id="mapimage">
         </div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

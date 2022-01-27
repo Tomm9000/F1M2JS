@@ -20,3 +20,9 @@ input{
     color: black;
     font-family: 'Poppins', sans-serif;
 }
+
+#mapimage{
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
