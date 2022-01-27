@@ -16,6 +16,13 @@ section{
     min-height: 200px;
 }
 
+.rood{
+    color: red;
+}
+.groen{
+    color: green;
+}
+
 h2{
     margin: 0 0 10px 0;
 }
