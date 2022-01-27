@@ -54,20 +54,37 @@ let lokaties =[ // Array
     {
         "titel":"locatie 4",
         "image":"img/4.jpg",
+        "directions":{
+            "oost": 4,
+        }
     },
 
     {
         "titel":"locatie 5",
         "image":"img/5.jpg",
+        "directions":{
+            "oost": 6,
+            "noord": 10,
+            "west": 1
+        }
     },
     {
         "titel":"locatie 6",
         "image":"img/6.jpg",
+        "directions":{
+            "west": 5,
+            "zuid": 11,
+            "oost": 7
+        }
     },
 
     {
         "titel":"locatie 7",
         "image":"img/7.jpg",
+        "directions":{
+            "noord": 9,
+            "zuid": 8
+        }
     },
     {
         "titel":"locatie 8",
@@ -102,7 +119,24 @@ function show(index){
 
 function updateDirections(){
     // Haal de mogelijke directions op voor de current_index
-    // Haal alle knoppen op
+    let possible = lokaties[current_index].directions;
+
+    // Zet de direction keys in een aparte variabele
+    let possible_keys = Object.keys(possible);
+
+    // Zet de keys van de buttons in een aparte variabele
+    let button_keys = Object.keys(directionButtons);
+
+    // Zet eerst alle knoppen uit
+    for(const key of button_keys){
+        directionButtons[key].style.visibility = "hidden";
+        
+    }
+
+    //zet nu de mogelijke knoppen aan
+    for(const key of possible_keys){
+        directionButtons[key].style.visibility = "visible"
+    }
 
 }
 
